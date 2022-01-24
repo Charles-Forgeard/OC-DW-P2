@@ -12,7 +12,6 @@ L'objectif étant de développer ces compétences:
 - Adapter l'affichage d'un site web à des écrans de petite taille
 - Intégrer du contenu conformément à une maquette
 - Préparer des éléments graphiques et textuels à intégrer à une page web
-- Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 
 ## Pour commencer
 
@@ -25,7 +24,7 @@ Merci de lire le fichier [CONTRIBUTING.md](https://github.com/Charles-Forgeard/O
 
 ## Versioning
 
-En discussion. 
+Facultatif, en discussion. 
 
 ## Auteur(s)
 

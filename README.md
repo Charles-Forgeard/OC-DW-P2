@@ -1,4 +1,5 @@
 # OC-DW-P2
+
 Projet N°2 V:29/09/2021 - formation développeur Web - OpenClassrooms
 
 Ce repository contient le projet numéro 2 du parcours proposé par OpenClassrooms pour obtenir le diplôme de développeur Web.
@@ -35,3 +36,6 @@ Voyez la liste des [contributeurs](https://github.com/Charles-Forgeard/-OC-Proje
 ## License
 
 Ce projet et libre et peut-être utilisé par tout à chacun: [GPL-3.0 License](https://github.com/Charles-Forgeard/-OC-Project-2-/blob/master/LICENSE).
+=======
+Projet N°2 V:29/09/2021 - formation développeur Web - Openclassrooms
+>>>>>>> af49a1576e2b92fc8b6890a64833ba30aee8354f

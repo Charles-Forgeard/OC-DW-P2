@@ -60,13 +60,11 @@ header, main {
 	border:  10px solid white;
 }
 
-/*essai*/
-
 .card h3{
 	font-size: 33px;
 	word-spacing: 0.50px;
 	letter-spacing: -0.60px;
-	margin: 17px 0 10px;
+	margin: 7px 0 0;
 }
 
 .card p{
@@ -81,6 +79,9 @@ header, main {
 
 #hebergements-cards .card{
 	height: 13.125vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .hebergement-picture{
@@ -92,3 +93,21 @@ header, main {
 	align-items: center;
 	justify-content: center;
 } 
+
+.card progress{
+	appearance: none;
+	height: 41px;
+	width: 28.81%;
+}
+
+progress::-webkit-progress-bar{
+	background-color: transparent;
+}
+
+progress::-moz-progress-bar{
+	background-color: var(--bleu);
+}
+
+progress::-webkit-progress-value{
+	background-color: var(--bleu);
+}

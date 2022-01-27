@@ -15,14 +15,13 @@
 	</head>
 
 	<body>
-		<div class="container">
 
 			<header>
 
-				<picture class="logo-Booki">
+				<div class="logo-Booki">
 					<source media="(max-width: 992px)" srcset="images/logo/Booki.png">
 					<img src="images/logo/Booki@3x.png" alt="Logo Booki">
-				</picture>
+				</div>
 
 				<nav class="nav-pages">
 					<ul>
@@ -46,21 +45,21 @@
 
 					<div id="filtres">
 
-						<i class="fas">&#xf53a;</i><!-- <i class="fas fa-money-bill-wave"></i> -->
-						<input type="checkbox" id="filtres-checkbox-economique" name="economique">
-						<label for="economique">Économique</label>
+							<i class="fas">&#xf53a;</i><!-- <i class="fas fa-money-bill-wave"></i> -->
+							<input type="checkbox" id="filtres-checkbox-economique" name="economique">
+							<label for="economique">Économique</label>
 
-						<i class="fas">&#xf1ae;</i><!-- <i class="fas fa-child"></i> -->
-						<input type="checkbox" id="filtres-checkbox-familial" name="familial">
-						<label for="familial">Familial</label>
+							<i class="fas">&#xf1ae;</i><!-- <i class="fas fa-child"></i> -->
+							<input type="checkbox" id="filtres-checkbox-familial" name="familial">
+							<label for="familial">Familial</label>
 
-						<i class="fas">&#xf004;</i><!-- <i class="fas fa-heart"></i> -->
-						<input type="checkbox" id="filtres-checkbox-romantique" name="romantique">
-						<label for="romantique">Romantique</label>
+							<i class="fas">&#xf004;</i><!-- <i class="fas fa-heart"></i> -->
+							<input type="checkbox" id="filtres-checkbox-romantique" name="romantique">
+							<label for="romantique">Romantique</label>
 
-						<i class="fas">&#xf6d3;</i><!-- <i class="fas fa-dog"></i> -->
-						<input type="checkbox" id="filtres-checkbox-animaux" name="animaux">
-						<label for="animaux">Animaux autorisés</label>
+							<i class="fas">&#xf6d3;</i><!-- <i class="fas fa-dog"></i> -->
+							<input type="checkbox" id="filtres-checkbox-animaux" name="animaux">
+							<label for="animaux">Animaux autorisés</label>
 						
 					</div>
 					
@@ -72,228 +71,240 @@
 
 				<p class="info"><i class="fas">&#xf129;</i><!-- <i class="fas fa-info"> --></i>Plus de 500 logements sontdisponibles dans cette ville</p> <!-- reste à ajouter logo info en css -->
 
-				<section id="hebergements-section">
+				<section id="hebergements-populaires-section">
 
-					<h2>Hébergements à Marseille</h2>
+					<div id="hebergements">
 
-					<div id="hebergements-cards" class="cards">
+						<h2>Hébergements à Marseille</h2>
 
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w, 
-											images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2997w, 
-											images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w, 
-											images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w" 
-									src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw" 
-									alt="Photo de l'auberge La Cannebière">
-							</picture>
-							<h3>Auberge La Cannebière</h3>
-							<p>Nuit à partir de 25€</p>
-							<progress value="80" max="100"></progress>
-						</article>
+						<div id="hebergements-cards">
 
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 5472w, 
-											images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2736w, 
-											images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1368w, 
-											images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 684w" 
-									src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo de l'Hôtel du Port">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Hôtel du port</h3>
-							<p>Nuit à partir de 52€</p>
-							<progress value="100" max="100"></progress>
-						</article>
+							<article class="card">
+								<div class="hebergement-picture">
+									<img id="img"
+										srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w, 
+												images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2997w, 
+												images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w, 
+												images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w" 
+										src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw" 
+										alt="Photo de l'auberge La Cannebière">
+								</div>
+								<h3>Auberge La Cannebière</h3>
+								<p>Nuit à partir de <span class="bold">25€</span></p>
+								<progress value="80" max="100"></progress>
+							</article>
 
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 6000w, 
-											images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3000w, 
-											images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w, 
-											images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 750w" 
-									src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo de l'Hôtel des mouettes">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Hôtel Les mouettes</h3>
-							<p>Nuit à partir de 76€</p>
-							<progress value="80" max="100"></progress>
-						</article>
+							<article class="card">
+								<div class="hebergement-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 5472w, 
+												images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2736w, 
+												images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1368w, 
+												images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 684w" 
+										src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw"
+										alt="Photo de l'Hôtel du Port">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Hôtel du port</h3>
+								<p>Nuit à partir de 52<span class="bold">€</span></p>
+								<progress value="100" max="100"></progress>
+							</article>
 
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4000w, 
-											images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2000w, 
-											images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w, 
-											images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 500w" 
-									src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo de l'Hôtel de la mer'">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Hôtel de la mer</h3>
-							<p>Nuit à partir de 46€</p>
-							<progress value="60" max="100"></progress>
-						</article>
-							
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 5212w, 
-											images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2606w, 
-											images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1303w, 
-											images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 652w" 
-									src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo de l'Auberge Le Panier'">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Auberge Le Panier</h3>
-							<p>Nuit à partir de 25€</p>
-							<progress value="80" max="100"></progress>
-						</article>
+							<article class="card">
+								<div class="hebergement-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 6000w, 
+												images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3000w, 
+												images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w, 
+												images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 750w" 
+										src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw"
+										alt="Photo de l'Hôtel des mouettes">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Hôtel Les mouettes</h3>
+								<p>Nuit à partir de 76<span class="bold">€</span></p>
+								<progress value="80" max="100"></progress>
+							</article>
 
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3888w, 
-											images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1944w, 
-											images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 972w, 
-											images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 486w" 
-									src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo de l'Hôtel chez Amina'">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Hôtel chez Amina</h3>
-							<p>Nuit à partir de 96€</p>
-							<progress value="100" max="100"></progress>
-						</article>
+							<article class="card">
+								<div class="hebergement-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4000w, 
+												images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2000w, 
+												images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w, 
+												images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 500w" 
+										src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw"
+										alt="Photo de l'Hôtel de la mer'">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Hôtel de la mer</h3>
+								<p>Nuit à partir de 46<span class="bold">€</span></p>
+								<progress value="60" max="100"></progress>
+							</article>
+								
+							<article class="card">
+								<div class="hebergement-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 5212w, 
+												images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2606w, 
+												images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1303w, 
+												images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 652w" 
+										src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw"
+										alt="Photo de l'Auberge Le Panier'">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Auberge Le Panier</h3>
+								<p>Nuit à partir de <span class="bold">25€</span></p>
+								<progress value="80" max="100"></progress>
+							</article>
 
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4249w, 
-											images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2125w, 
-											images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w, 
-											images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 532w" 
-									src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo de l'Hôtel Le soleil du matin">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Hôtel Le soleil du matin</h3>
-							<p>Nuit à partir de 128€</p>
-							<progress value="100" max="100"></progress>
-						</article>
+							<article class="card">
+								<div class="hebergement-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3888w, 
+												images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1944w, 
+												images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 972w, 
+												images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 486w" 
+										src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw"
+										alt="Photo de l'Hôtel chez Amina'">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Hôtel chez Amina</h3>
+								<p>Nuit à partir de 96<span class="bold">€</span></p>
+								<progress value="100" max="100"></progress>
+							</article>
 
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4032w, 
-											images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 2016w, 
-											images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w, 
-											images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 504w" 
-									src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo d'une chambre des chambres d'hôtes Au coeur de l'eau">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Au coeur de l'eau <br>Chambres d'hôtes</h3>
-							<p>Nuit à partir de 71€</p>
-							<progress value="80" max="100"></progress>
-						</article>
+							<article class="card">
+								<div class="hebergement-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4249w, 
+												images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2125w, 
+												images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w, 
+												images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 532w" 
+										src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw"
+										alt="Photo de l'Hôtel Le soleil du matin">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Hôtel Le soleil du matin</h3>
+								<p>Nuit à partir de 128<span class="bold">€</span></p>
+								<progress value="100" max="100"></progress>
+							</article>
 
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4000w, 
-											images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2000w, 
-											images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w, 
-											images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 500w" 
-									src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo d'une chambre de l'Hôtel Tout bleu et Blanc">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Hôtel Tout bleu et Blanc</h3>
-							<p>Nuit à partir de 68€</p>
-							<progress value="80" max="100"></progress>
-						</article>
+							<article class="card">
+								<div class="hebergement-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4032w, 
+												images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 2016w, 
+												images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w, 
+												images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 504w" 
+										src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw"
+										alt="Photo d'une chambre des chambres d'hôtes Au coeur de l'eau">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Au coeur de l'eau <br>Chambres d'hôtes</h3>
+								<p>Nuit à partir de 71<span class="bold">€</span></p>
+								<progress value="80" max="100"></progress>
+							</article>
+
+							<article class="card">
+								<div class="hebergement-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4000w, 
+												images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2000w, 
+												images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w, 
+												images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 500w" 
+										src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.07vw"
+										alt="Photo d'une chambre de l'Hôtel Tout bleu et Blanc">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Hôtel Tout bleu et Blanc</h3>
+								<p>Nuit à partir de 68<span class="bold">€</span></p>
+								<progress value="80" max="100"></progress>
+							</article>
+
+						</div>
+
+						<a href="#">Afficher plus</a>
+
+					</div>
+
+					<aside id="populaires" class="herbergements-populaires-sections">
+
+						<h2>Les plus populaires<i class="fas">&#xf201;</i><!-- <i class="fas fa-chart-line"></i> --></h2>
+
+						<div id="populaires-cards">
+
+							<article class="populaires-card">
+								<div class="populaires-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4249w, 
+												images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2125w, 
+												images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w, 
+												images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 532w" 
+										src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.12vw"
+										alt="Photo de l'Hôtel Le soleil du matin">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Hôtel Le soleil du matin</h3>
+								<p>Nuit à partir de 128<span class="bold">€</span></p>
+								<progress value="100" max="100"></progress>
+							</article>
+
+							<article class="populaires-card">
+								<div class="populaires-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4032w, 
+												images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 2016w, 
+												images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w, 
+												images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 504w" 
+										src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.12vw"
+										alt="Photo d'une chambre des chambres d'hôtes Au coeur de l'eau">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Au coeur de l'eau <br>Chambres d'hôtes</h3>
+								<p>Nuit à partir de 71<span class="bold">€</span></p>
+								<progress value="80" max="100"></progress>
+							</article>
+
+							<article class="populaires-card">
+								<div class="populaires-picture">
+									<img 
+										srcset="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4000w, 
+												images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2000w, 
+												images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w, 
+												images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 500w" 
+										src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+										sizes="(max-width:992px) 89.17vw, 17.12vw"
+										alt="Photo d'une chambre de l'Hôtel Tout bleu et Blanc">
+										<!-- Sizes à calculer -->
+								</div>
+								<h3>Hôtel Tout bleu et Blanc</h3>
+								<p>Nuit à partir de 68<span class="bold">€</span></p>
+								<progress value="80" max="100"></progress>
+							</article>
+
+						</aside>
 
 					</div>
 
 				</section>
 
-				<section id="populaires-section">
-
-					<h2>Les plus populaires<i class="fas">&#xf201;</i><!-- <i class="fas fa-chart-line"></i> --></h2>
-
-					<div id="populaires-cards">
-
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4249w, 
-											images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2125w, 
-											images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w, 
-											images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 532w" 
-									src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo de l'Hôtel Le soleil du matin">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Hôtel Le soleil du matin</h3>
-							<p>Nuit à partir de 128€</p>
-							<progress value="100" max="100"></progress>
-						</article>
-
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4032w, 
-											images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 2016w, 
-											images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w, 
-											images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 504w" 
-									src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo d'une chambre des chambres d'hôtes Au coeur de l'eau">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Au coeur de l'eau <br>Chambres d'hôtes</h3>
-							<p>Nuit à partir de 71€</p>
-							<progress value="80" max="100"></progress>
-						</article>
-
-						<article class="card">
-							<picture>
-								<img 
-									srcset="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4000w, 
-											images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2000w, 
-											images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w, 
-											images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 500w" 
-									src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
-									sizes="(max-width:992px) 89.17vw, 17.12vw"
-									alt="Photo d'une chambre de l'Hôtel Tout bleu et Blanc">
-									<!-- Sizes à calculer -->
-							</picture>
-							<h3>Hôtel Tout bleu et Blanc</h3>
-							<p>Nuit à partir de 68€</p>
-							<progress value="80" max="100"></progress>
-						</article>
-
 					</div>
 
 				</section>
+
+				
 
 				<section id="activites-section">
 
@@ -397,33 +408,32 @@
 
 			<footer>
 
-				<section>
-					<h4>A propos</h4>
-					<a href="#">Fonctionnement du site</a>
-					<br>
-					<a href="#">Conditions générales de vente</a>
-					<br>
-					<a href="#">Données et confidentialité</a>
-				</section>
+				<div>
+					<h3>A propos</h4>
+					<ul>
+						<li href="#">Fonctionnement du site</li>
+						<li href="#">Conditions générales de vente</li>
+						<li href="#">Données et confidentialité</li>
+					</ul>
+				<div/>
 
-				<section>
-					<h4>Nos hébergements</h4>
-					<a href="#">Charte qualité</a>
-					<br>
-					<a href="#">Soumettre votre hôtel</a>
-				</section>
+				<div>
+					<h3>Nos hébergements</h4>
+					<ul>
+						<li href="#">Charte qualité</li>
+						<li href="#">Soumettre votre hôtel</li>
+					</ul>
+				<div/>
 
-				<section>
-					<h4>Assistance</h4>
-					<a href="#">Centre d'aide</a>
-					<br>
-					<a href="#">Nous contacter</a>
-				</section>
+				<div>
+					<h3>Assistance</h4>
+					<ul>
+						<li href="#">Centre d'aide</li>
+						<li href="#">Nous contacter</li>
+					</ul>
+				<div/>
 
 			</footer>
-
-		</div>
-		
 		
 	</body>
 </html>
